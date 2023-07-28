@@ -1,0 +1,215 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .weather-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .location {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .weather-icon {
+            max-width: 250px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .temperature {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            font-size: 18px;
+            color: #888;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            color: #888;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="weather-container">
+         <input type="text" > -->
+        <!-- <div class="location">Kochi</div>
+        <img class="weather-icon" src="./Images/partiallycloudy.jpg" alt="Weather Icon">
+        <div class="temperature">25°C</div>
+        <div class="description">Partly Cloudy</div>
+    </div>
+
+    <div class="footer"> -->
+        <!-- Weather data provided by YourWeatherSource.com -->
+    <!-- </div>
+</body>
+</html> -->
+
+
+<!-- //https://api.openweathermap.org/data/2.5/weather?q=${locationInput}&appid=${apiKey}&units=metric -->
+
+
+
+
+
+
+`
+                    <!-- <h2>Weather in ${data.name}</h2>
+                    <p>Temperature: ${data.main.temp}°C</p>
+                    <p>Description: ${data.weather[0].description}</p>
+                    <p>Humidity: ${data.main.humidity}%</p>
+                    <p>Wind Speed: ${data.wind.speed} m/s</p>
+                ` -->
+
+
+
+
+
+
+                <!-- <div class="card text-center">
+                    <div class="card-header">
+                      Featured
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="card-footer text-body-secondary">
+                      2 days ago
+                    </div>
+                  </div> -->
+
+
+<!-- 
+                  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./weather.css">
+</head>
+<body>
+    <div class="text-center mt-3 p-4">
+        <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: aliceblue;">Weather Forecast Report</h1>
+    </div>
+    <form action="">
+        <div class="container mt-5 p-5 text-center form-control" style="background-color: #ffffff4d;">
+            <input type="text" class="form-control" name="" id="weather" placeholder="enter the city"><br><br>
+            <button type="button" class="btn btn-outline-info" onclick="weatherDetect()">search</button><br><br>
+            <div id="result"><h2></h2></div>
+            <i class="fa-solid fa-cloud-bolt fa-10x" style="color: #044281;"></i><br>
+            <div id="cel"></div>
+            <div id="des"></div>
+
+        </div>
+    </form>
+</body>
+<script>
+    function weatherDetect(){
+        cityName=weather.value
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=b41ec3be35c7dac8aabbc21ba253137a`).then(data=>data.json()).then(cData=>displayData(cData))
+
+        function displayData(dataArray){
+        name=dataArray.name
+        weather=dataArray.weather[0].description
+        temperature=dataArray.main.temp
+        result.innerHTML=<div>
+            <h3 style="font-family:'Franklin Gothic Medium','Arial Narrow',Arial, sans-serif">${name}</h3>
+            </div>
+        cel.innerHTML=
+        <div>
+            <h3 style="font-family:'Franklin Gothic Medium','Arial Narrow',Arial, sans-serif">${temperature}</h3>
+            </div>
+
+        des.innerHTML=<div>
+            <h3 style="font-family:'Franklin Gothic Medium','Arial Narrow',Arial, sans-serif">${weather}</h3>
+            </div> 
+    }
+}
+</script> 
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./weather.css">
+</head>
+
+<body>
+    <form action="">
+        <div style="background-color: rgba(128, 128, 128, 0.162);"
+            class="container text-center form-control p-4 mt-4 w-50">
+            <input style="height: 40px;" class="mt-2" type="text" id="weatherCall" placeholder="Enter City Name">
+            <button class="ms-1 btn btn-outline-dark" onclick="weatherDetect()" type="button"><i
+                    class="fa-solid fa-location-arrow"></i></button><br>
+                    <h1 class="text-white text-center mt-5" id="result"></h1>
+                    <i class="mt-4 mb-4 fa-solid fa-cloud-sun-rain fa-7x" style="color: white;"></i>
+            <div style="font-size: 100px;" id="cel" class="text-center text-white">
+            </div>
+           <h3 class="text-center mt-3 text-white" id="temp"></h3>
+        </div>
+    </form>
+</body>
+<script>
+    function weatherDetect() {
+        cityName = weatherCall.value
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=b41ec3be35c7dac8aabbc21ba253137a`)
+            .then(data=>data.json()).then(cData=>displayData(cData))
+        // console.log(cityName);
+        function displayData(dataArray) {
+            name = dataArray.name
+        weather = dataArray.weather[0].description
+        temperature1 = dataArray.main.temp
+        temperature = Math.floor(temperature1-273.15)
+        result.innerHTML=`<div>
+            <h1 style="font-family: 'Borel', cursive;">${name}</h1>
+            </div>
+        cel.innerHTML=
+        <div>
+            <h2 style= "font-family: 'Handjet', cursive;font-size:50px">${temperature}°C</h2>
+            </div>
+
+        temp.innerHTML=<div>
+            <h2 style="font-family: 'Source Code Pro', monospace;">${weather}</h2>
+            </div>`
+        }
+    }
+
+</script>
+
+</html>

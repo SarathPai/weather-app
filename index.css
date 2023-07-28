@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(./Images/allweather.jpg);
+    background-size: cover;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #007bffb8;
+    color: #d11414;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.weather-details {
+    border: 1px solid #cccccc4c;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+}

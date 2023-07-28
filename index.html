@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="./index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container" style="background-color: rgba(240, 248, 255, 0.139); width: 600px; height: 500px;">
+    <h1 class="text-center mt-4 text-black-50">Weather Forecast Department</h1><br>
+    <div class="search">
+      <input type="text" class="form-control" id="search" placeholder="Enter a location"><br>
+      <button onclick="getWeather()" type="button" class="btn btn-outline-info mt-5">Get Weather</button>
+    </div>
+
+    <div id="weatherDetails"  class="mt-5 p-3"></div>
+  </div>
+
+  <script>
+    function getWeather() {
+      const locationInput = document.getElementById('search').value;
+
+      // Clear previous weather details
+      document.getElementById('weatherDetails').innerHTML = '';
+
+      // Make the API call to get weather data
+      fetch(`https://api.openweathermap.org/data/2.5/weather?q=${locationInput}&appid=b41ec3be35c7dac8aabbc21ba253137a`)
+        .then(response => response.json())
+        .then(data => displayData(data))
+        .catch(error => {
+          console.error('Error fetching weather data:', error);
+        });
+    }
+
+    function displayData(dataArray) {
+      name = dataArray.name;
+      weather = dataArray.weather[0].description;
+      temperature = dataArray.main.temp;
+      temperature = Math.floor(temperature - 273.15);
+
+      // Display weather details
+      weatherDetailsContainer = document.getElementById('weatherDetails');
+      weatherDetailsContainer.innerHTML = `
+        <div class="card" style="width: 18rem;">
+          <div class="card-body text-center">
+            <h5 class="card-title">${name}</h5>
+          </div>
+          <ul class="list-group list-group-flush text-center">
+            <li class="list-group-item">${temperature}°C</li>
+            <li class="list-group-item">${weather}</li>
+          </ul>
+        </div>`;
+
+    }
+  </script>
+</body>
+</html>
